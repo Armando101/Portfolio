@@ -1,0 +1,18 @@
+:root {
+  --primary: #3da9fc;
+  --headline1: 700 4.5rem/5rem Inter;
+  --headline2: 700 4rem/4.75rem Inter;
+  --headline3: 700 2rem/2rem Inter;
+  --headline4: 700 1.5rem/1.649999976158142rem Inter;
+  --headline5: 700 1.25rem/1.649999976158142rem Inter;
+  --body1regular: 400 1.125rem/1.6875rem Inter;
+  --body1bold: 700 1.125rem/1.6875rem Inter;
+  --body2regular: 400 0.875rem/1.5rem Inter;
+  --body2bold: 700 0.875rem/1.6875rem Inter;
+  --button: 600 1.125rem/1.6875rem Inter;
+  --caption: 400 0.75rem/1.6875rem Inter;
+}
+
+body {
+  font-family: Inter;
+}
