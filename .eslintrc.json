@@ -1,0 +1,72 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "@typescript-eslint/tslint",
+    "import",
+    "rxjs"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "no-useless-constructor": "off",
+    "no-magic-numbers": "off",
+    "no-console": "warn",
+    "quotes": "off",
+    "camelcase": ["error", { "properties": "never" }],
+    "comma-dangle": "off",
+    "complexity": ["error", { "max": 12 }],
+    "prefer-const": "warn",
+    "dot-notation": "warn",
+    "eol-last": "error",
+    "max-lines": ["warn", 400],
+    "no-duplicate-case": "error",
+    "no-multiple-empty-lines": "warn",
+    "no-unused-expressions": "error",
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "variableLike",
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+      },
+      {
+        "selector": "memberLike",
+        "format": ["PascalCase", "snake_case", "camelCase"]
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "default",
+        "format": ["camelCase"]
+      }
+    ],
+    "no-empty": "off",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": ["error"],
+    "@typescript-eslint/no-magic-numbers": [
+      "warn",
+      {
+        "ignore": [-1, 0, 1]
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": "warn"
+  }
+}
