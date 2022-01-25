@@ -1,6 +1,9 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+### Mobile view
+![image](https://user-images.githubusercontent.com/35951139/150895546-ff48627b-79a0-4e24-bdd8-57413d8e05b8.png)
+
+
 
 ## Development server
 
