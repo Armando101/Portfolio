@@ -1,0 +1,26 @@
+.hero {
+  padding: 1.5rem;
+  & h3,
+  h5,
+  p {
+    margin-block: 1rem;
+  }
+  &-image {
+    & img {
+      border-radius: 50%;
+      inline-size: 5rem;
+    }
+  }
+  & h3 {
+    font: var(--headline3);
+    color: var(--contrast2);
+  }
+  & h5 {
+    font: var(--headline5);
+    color: var(--gray2);
+  }
+  & p {
+    font: var(--body1regular);
+    color: var(--gray2);
+  }
+}
