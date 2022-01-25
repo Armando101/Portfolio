@@ -1,6 +1,9 @@
 .project {
   padding: 1.5rem;
   background-color: var(--secondary);
+  &-image {
+    text-align: center;
+  }
   & h3 {
     font: var(--headline3);
     color: var(--contrast2);

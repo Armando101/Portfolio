@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NAVIGATION } from 'src/app/core/constants/user-info';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  navbarItems = [
-    { name: 'Proyectos' },
-    { name: 'Testimonios' },
-    { name: 'Contacto' },
-    { name: 'Prensa' },
-  ];
+  navbarItems = NAVIGATION;
 }

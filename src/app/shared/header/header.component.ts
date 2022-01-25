@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { USER } from 'src/app/core/constants/user-info';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  name = 'Armando Rivera';
+  name = USER.fullName;
   showNav = false;
   @HostListener('document:click', ['$event'])
   clickout(event) {

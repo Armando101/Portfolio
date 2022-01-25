@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { USER } from 'src/app/core/constants/user-info';
 
 @Component({
   selector: 'app-hero',
@@ -6,10 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent {
-  name = 'Armando Rivera';
-  imagePath = '/assets/images/armando-rivera.png';
+  name = USER.fullName;
+  imagePath = `/assets/images/${USER.image}.png`;
   placeholder = `Foto de ${this.name}`;
-  resume = 'Soy un Frontend, centrado en la creación de productos digitales.';
-  description =
-    'Me encanta centrarme en los detalles de las experiencias de nuevos productos con una  implementación en código perfecta. Pero los grandes productos no comienzan ahí, comienzan con una sólida colaboración con los compañeros de equipo de investigación, ingeniería y productos para comprender los problemas y las circunstancias de los clientes.';
+  resume = USER.resume;
+  description = USER.description;
 }
