@@ -1,5 +1,9 @@
 <div class="experienceList">
   <h3>Experiencia</h3>
-  <h5>Tengo más de 3 años de experiencia en Frontend.</h5>
+  <h5>{{ description }}</h5>
   <hr />
+  <app-experience
+    *ngFor="let experience of experienceList"
+    [experience]="experience"
+  ></app-experience>
 </div>

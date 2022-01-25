@@ -1,4 +1,5 @@
 import {
+  IExperience,
   INavigation,
   IProject,
   IUser,
@@ -32,5 +33,23 @@ export const PROJECT_LIST: Partial<IProject>[] = [
     title: 'Instantanea',
     description:
       'Aplicación y red social propiedad de Facebook, cuya función principal es poder compartir fotografías y vídeos con otros usuarios.Aplicación y red social propiedad de Facebook, cuya función principal es poder compartir fotografías y vídeos con otros usuarios.',
+  },
+];
+
+export const EXPERIENCE_DESCRIPTION =
+  'Tengo más de 2 años de experiencia en Frontend.';
+
+export const EXPERIENCE_LIST: IExperience[] = [
+  {
+    title: 'Marvolo',
+    periodRole: 'Frontend - 2018',
+    description:
+      '¡Marvol.com es el sitio oficial de Marvol Entertainment! Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvel.',
+  },
+  {
+    title: 'Niko',
+    periodRole: 'Frontend - 2019',
+    description:
+      'Encuentra lo mejor de Niko, con productos nuevos cada semana y disfruta del envío gratis. ¡Únete a nosotros! y accede como miembro a productos y beneficios exclusivos. ',
   },
 ];

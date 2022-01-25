@@ -3,6 +3,9 @@
   background-color: var(--secondary);
   &-image {
     text-align: center;
+    & img {
+      inline-size: 100%;
+    }
   }
   & h3 {
     color: var(--contrast2);
@@ -17,5 +20,15 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .project {
+    &-image {
+      & img {
+        inline-size: inherit;
+      }
+    }
   }
 }

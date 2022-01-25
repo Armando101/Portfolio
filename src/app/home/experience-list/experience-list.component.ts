@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {
+  EXPERIENCE_DESCRIPTION,
+  EXPERIENCE_LIST,
+} from 'src/app/core/constants/user-info';
 
 @Component({
   selector: 'app-experience-list',
   templateUrl: './experience-list.component.html',
-  styleUrls: ['./experience-list.component.scss']
+  styleUrls: ['./experience-list.component.scss'],
 })
-export class ExperienceListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ExperienceListComponent {
+  experienceList = EXPERIENCE_LIST;
+  description = EXPERIENCE_DESCRIPTION;
 }

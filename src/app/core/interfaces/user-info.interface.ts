@@ -18,3 +18,9 @@ export interface IProject {
   description: string;
   placeholder: string;
 }
+
+export interface IExperience {
+  title: string;
+  periodRole: string;
+  description: string;
+}
