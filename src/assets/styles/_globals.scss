@@ -1,5 +1,6 @@
+@import './colors';
+
 :root {
-  --primary: #3da9fc;
   --headline1: 700 4.5rem/5rem Inter;
   --headline2: 700 4rem/4.75rem Inter;
   --headline3: 700 2rem/2rem Inter;
@@ -14,5 +15,6 @@
 }
 
 body {
-  font-family: Inter;
+  font: var(--body1regular);
+  margin: 0;
 }

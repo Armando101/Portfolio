@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  &-name {
+    font: var(--headline4);
+    color: var(--secondary);
+  }
+  & i {
+    color: var(--primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
