@@ -1,0 +1,19 @@
+.experienceList {
+  background-color: var(--contrast2);
+  padding-inline: 1.5rem;
+  padding-block: 5rem;
+  & > * {
+    color: var(--white);
+    margin: 0;
+  }
+
+  & h5 {
+    margin-block: 1rem;
+  }
+  & hr {
+    border: none;
+    block-size: 1px;
+    background-color: white;
+    border-radius: 1rem;
+  }
+}

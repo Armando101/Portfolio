@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 1.5rem;
   &-name {
-    font: var(--headline4);
     color: var(--gray3);
+    margin: 0;
   }
   & i {
     color: var(--primary);
