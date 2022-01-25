@@ -1,7 +1,7 @@
 # Portfolio
 
 ### Mobile view
-![image](https://user-images.githubusercontent.com/35951139/150895546-ff48627b-79a0-4e24-bdd8-57413d8e05b8.png)
+![image](https://user-images.githubusercontent.com/35951139/150903470-6e75e08d-5009-41c1-9518-e74c573d9e13.png)
 
 
 
