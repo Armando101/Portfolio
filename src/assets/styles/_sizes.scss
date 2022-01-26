@@ -1,0 +1,29 @@
+.w-100 {
+  inline-size: 100%;
+}
+
+.w-75 {
+  inline-size: 75%;
+}
+
+.w-50 {
+  inline-size: 50%;
+}
+
+.w-25 {
+  inline-size: 25%;
+}
+
+.w-100 {
+  inline-size: 100%;
+}
+
+.w-lg-50 {
+  inline-size: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .w-lg-50 {
+    inline-size: 50%;
+  }
+}

@@ -8,9 +8,12 @@
     & img {
       border-radius: 50%;
       inline-size: 5rem;
+      block-size: 5rem;
     }
   }
-  & h3 {
+  & h1 {
+    font: var(--headline3);
+    margin-block: 1rem;
     color: var(--contrast2);
   }
   & h5 {
@@ -18,5 +21,16 @@
   }
   & p {
     color: var(--gray2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    & h1 {
+      font: var(--headline2);
+    }
+    & h5 {
+      font: var(--headline4);
+    }
   }
 }
