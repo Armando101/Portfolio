@@ -1,0 +1,34 @@
+section.section,
+footer.footer {
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  &.hero {
+    background-color: var(--white);
+  }
+  &.experienceList,
+  &.contact,
+  &.footer {
+    background-color: var(--contrast2);
+  }
+}
+.wrapper.projectList {
+  background-color: var(--secondary);
+}
+
+@media screen and (min-width: 1024px) {
+  section.section,
+  footer.footer {
+    max-inline-size: 50rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section.section,
+  footer.footer {
+    max-inline-size: 60rem;
+  }
+}

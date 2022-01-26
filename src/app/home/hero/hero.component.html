@@ -1,16 +1,18 @@
-<div class="hero" role="banner">
-  <div class="hero-image">
-    <img
-      width="80"
-      height="80"
-      loading="lazy"
-      [src]="imagePath"
-      [alt]="placeholder"
-      [title]="placeholder"
-    />
-  </div>
-  <h3>{{ name }}</h3>
-  <h5>{{ resume }}</h5>
-  <p>{{ description }}</p>
-  <app-button type="primary" title="Descargar Currículum"></app-button>
+<div class="wrapper hero">
+  <section class="hero section" role="banner">
+    <div class="hero-image">
+      <img
+        width="80"
+        height="80"
+        loading="lazy"
+        [src]="imagePath"
+        [alt]="placeholder"
+        [title]="placeholder"
+      />
+    </div>
+    <h3>{{ name }}</h3>
+    <h5>{{ resume }}</h5>
+    <p>{{ description }}</p>
+    <app-button type="primary" title="Descargar Currículum"></app-button>
+  </section>
 </div>

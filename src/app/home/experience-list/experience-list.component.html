@@ -1,9 +1,11 @@
-<div class="experienceList">
-  <h3>Experiencia</h3>
-  <h5>{{ description }}</h5>
-  <hr />
-  <app-experience
-    *ngFor="let experience of experienceList"
-    [experience]="experience"
-  ></app-experience>
+<div class="wrapper experienceList">
+  <section class="section experienceList">
+    <h3>Experiencia</h3>
+    <h5>{{ description }}</h5>
+    <hr />
+    <app-experience
+      *ngFor="let experience of experienceList"
+      [experience]="experience"
+    ></app-experience>
+  </section>
 </div>
