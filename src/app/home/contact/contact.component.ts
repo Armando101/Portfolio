@@ -8,4 +8,8 @@ import { CONTACT } from 'src/app/core/constants/user-info';
 })
 export class ContactComponent {
   contact = CONTACT;
+
+  get emailLink() {
+    return `mailto:${this.contact.email}`;
+  }
 }
