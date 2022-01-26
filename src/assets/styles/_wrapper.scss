@@ -20,8 +20,7 @@ footer.footer {
 }
 
 @media screen and (min-width: 1024px) {
-  section.section,
-  footer.footer {
+  section.section {
     max-inline-size: 50rem;
   }
 }
@@ -29,10 +28,5 @@ footer.footer {
 @media screen and (min-width: 1440px) {
   section.section {
     max-inline-size: 60rem;
-  }
-  footer.footer {
-    max-inline-size: 100%;
-    box-sizing: border-box;
-    padding-inline: 4rem;
   }
 }

@@ -20,10 +20,11 @@ footer.footer {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   footer.footer {
     display: flex;
     justify-content: space-between;
+    padding-inline: 5rem;
     & ul {
       display: flex;
       gap: 2.5rem;
