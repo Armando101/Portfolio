@@ -57,4 +57,18 @@ export const EXPERIENCE_LIST: IExperience[] = [
 export const CONTACT = {
   message: '¿Quieres trabajar conmigo? ¡Hazme ping!',
   email: 'rivera.armando0829@gmail.com',
+  socialNetworks: [
+    {
+      name: 'Instagram',
+      path: 'https://www.instagram.com/armandorn101/',
+    },
+    {
+      name: 'Twitter',
+      path: 'https://twitter.com/armandorn101',
+    },
+    {
+      name: 'GitHub',
+      path: 'https://github.com/Armando101',
+    },
+  ],
 };

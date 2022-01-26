@@ -1,0 +1,8 @@
+<footer class="footer">
+  <h5>{{ user.fullName }}</h5>
+  <ul>
+    <li *ngFor="let social of socialNetworks">
+      <a [href]="social.path" target="_blank">{{ social.name }}</a>
+    </li>
+  </ul>
+</footer>
