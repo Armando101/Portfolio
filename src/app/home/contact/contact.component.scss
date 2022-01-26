@@ -11,3 +11,14 @@
     text-decoration: none;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .section.contact {
+    & h4 {
+      font: var(--headline2);
+    }
+    & a {
+      font: var(--headline4);
+    }
+  }
+}
