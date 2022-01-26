@@ -23,6 +23,10 @@ export class HeaderComponent {
     this.showNav = !this.showNav;
   }
 
+  get classMenu() {
+    return this.showNav ? '.icon-visible' : 'is-not-visible';
+  }
+
   get hamburguerIcon() {
     return 'icon-hamburguer-button';
   }

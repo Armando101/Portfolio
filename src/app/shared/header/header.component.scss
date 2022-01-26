@@ -3,13 +3,33 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  &-name {
-    color: var(--gray3);
-    margin: 0;
-  }
   & i {
     color: var(--primary);
     font-size: 1.5rem;
     cursor: pointer;
+  }
+  &-name {
+    color: var(--gray3);
+    margin: 0;
+  }
+}
+
+.is-not-visible {
+  display: none;
+}
+
+.icon-visible {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .is-not-visible {
+    display: block;
+  }
+  .icon-visible {
+    display: none;
+  }
+  .second-nav-visible {
+    display: none;
   }
 }

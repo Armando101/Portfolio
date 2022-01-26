@@ -11,10 +11,20 @@ ul {
     color: var(--gray3);
     text-transform: uppercase;
     outline: none;
+    user-select: none;
     font: var(--body2bold);
     &:hover,
     &:focus {
       color: var(--contrast2);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    padding: 1.5rem;
+    & ul {
+      flex-direction: row-reverse;
     }
   }
 }

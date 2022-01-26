@@ -1,5 +1,6 @@
 <header class="header">
   <h4 class="header-name">{{ name }}</h4>
-  <i (click)="showNavbar()" [class]="currentIconClass"></i>
+  <i class="icon-visible" (click)="showNavbar()" [class]="currentIconClass"></i>
+  <app-navbar class="is-not-visible" [class]="classMenu"></app-navbar>
 </header>
-<app-navbar *ngIf="showNav"></app-navbar>
+<app-navbar class="second-nav-visible" [class]="classMenu"></app-navbar>
