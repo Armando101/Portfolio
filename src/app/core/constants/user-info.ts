@@ -53,3 +53,8 @@ export const EXPERIENCE_LIST: IExperience[] = [
       'Encuentra lo mejor de Niko, con productos nuevos cada semana y disfruta del envío gratis. ¡Únete a nosotros! y accede como miembro a productos y beneficios exclusivos. ',
   },
 ];
+
+export const CONTACT = {
+  message: '¿Quieres trabajar conmigo? ¡Hazme ping!',
+  email: 'rivera.armando0829@gmail.com',
+};

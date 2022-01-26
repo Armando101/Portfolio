@@ -9,9 +9,10 @@ import { ProjectComponent } from './project/project.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ExperienceListComponent } from './experience-list/experience-list.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [HeroComponent, HomeComponent, ProjectComponent, ProjectListComponent, ExperienceComponent, ExperienceListComponent],
+  declarations: [HeroComponent, HomeComponent, ProjectComponent, ProjectListComponent, ExperienceComponent, ExperienceListComponent, ContactComponent],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
 export class HomeModule {}
