@@ -19,3 +19,14 @@ footer.footer {
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  footer.footer {
+    display: flex;
+    justify-content: space-between;
+    & ul {
+      display: flex;
+      gap: 2.5rem;
+    }
+  }
+}
