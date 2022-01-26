@@ -30,3 +30,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .project {
+    display: flex;
+    gap: 7rem;
+    padding-block: 5rem;
+    &-description {
+      margin: auto;
+    }
+    & .buttonList {
+      flex-direction: row;
+      & app-button {
+        flex-grow: 1;
+      }
+    }
+  }
+}
