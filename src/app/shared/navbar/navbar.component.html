@@ -1,7 +1,7 @@
 <nav role="navigation">
   <ul>
     <li *ngFor="let item of navbarItems">
-      <a [fragment]="item.path" (click)="navigateToSection(item.path)">{{
+      <a [fragment]="item.path" (click)="navigateToSection(item)">{{
         item.name
       }}</a>
     </li>

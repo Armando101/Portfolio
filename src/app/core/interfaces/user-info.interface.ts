@@ -11,6 +11,7 @@ export interface IUser {
 export interface INavigation {
   name: string;
   path: string;
+  isExternal?: boolean;
 }
 
 export interface IProject {
@@ -26,4 +27,5 @@ export interface IExperience {
   title: string;
   periodRole: string;
   description: string;
+  link: string;
 }

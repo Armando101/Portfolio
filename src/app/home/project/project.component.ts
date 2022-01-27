@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { EVEN } from 'src/app/core/constants/utils.constants';
 import { IProject } from 'src/app/core/interfaces/user-info.interface';
 
 @Component({
@@ -8,6 +9,8 @@ import { IProject } from 'src/app/core/interfaces/user-info.interface';
 })
 export class ProjectComponent implements OnInit {
   @Input() project: IProject;
+  @Input() private readonly id: number;
+
   pathImage: string;
   placeholder: string;
 
@@ -20,5 +23,9 @@ export class ProjectComponent implements OnInit {
     const kebakCase = this.project.title.replace(' ', '-');
     const imageName = kebakCase.toLocaleLowerCase();
     return imageName;
+  }
+
+  get isEven() {
+    return this.id % EVEN === 0;
   }
 }

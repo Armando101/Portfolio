@@ -22,18 +22,25 @@ export const NAVIGATION: INavigation[] = [
   { name: 'Proyectos', path: '#projects' },
   { name: 'Experiencia', path: '#experience' },
   { name: 'Contacto', path: '#contact' },
+  {
+    name: 'Blog',
+    path: 'https://armandorivera-blog.netlify.app/',
+    isExternal: true,
+  },
 ];
 
 export const PROJECT_LIST: Partial<IProject>[] = [
   {
     title: 'Portafolio',
     description:
-      'Publica tus projectos, tu experiencia y tu contacto, muéstrale al mundo las tecnlogofías con las que has trabajado. Esta aplicación fue construida con Angular, Sass, HTML y CSS, se buscó tener una arquitectura basada en componentes reutilizables',
+      'Publica tus projectos, tu experiencia y contacto, muéstrale al mundo las tecnologdías con las que has trabajado. Esta aplicación fue construida con Angular, Sass, HTML y CSS, se buscó tener una arquitectura basada en componentes reutilizables',
+    linkProject: 'https://www.armandorivera.tech',
+    linkCode: 'https://github.com/Armando101/Portfolio',
   },
   {
     title: 'Spotifu',
     description:
-      'Spotifu es un clon de Spotify, se construyó unicamente con HTML y CSS, se usó flexbox para el posicionamiento de los elementos, es un clone de la aplicación Spotify para desktop',
+      'Spotifu es un clon de la aplicación desktop Spotify, se construyó unicamente con HTML y CSS, se usó flexbox para el posicionamiento de los elementos',
     linkProject: 'https://armando101.github.io/spotifu/',
     linkCode: 'https://github.com/Armando101/spotifu',
   },
@@ -49,7 +56,7 @@ export const PROJECT_LIST: Partial<IProject>[] = [
     description:
       'En este sitio web puedes publicar tus propios artículos, fue creado con gatsby y para el deploy se ocupó Netlify y cloudflare',
     linkCode: 'https://github.com/Armando101/blog',
-    linkProject: 'https://www.armandorivera.tech/',
+    linkProject: 'https://armandorivera-blog.netlify.app/',
   },
 ];
 
@@ -62,24 +69,28 @@ export const EXPERIENCE_LIST: IExperience[] = [
     periodRole: 'Web Desinger - 10/2021 - Actualidad ',
     description:
       'Desarrollo de aplicaciones con Angular, Maquetado pixel perfect basado en diseños de figma, Integración con GraphQL, proponer y bajar requerimentos a código',
+    link: 'https://www.kavak.com/',
   },
   {
     title: 'Palo-IT',
     periodRole: 'Frontend - 04/2021 - 08/2021',
     description:
       'Maquetado con Bootstrap, Integración de API REST, pruebas unitarias con Jasmine y Karma, escribir documentación de proyectos, interacción con clientes',
+    link: 'https://www.palo-it.com/es/',
   },
   {
     title: 'Te creemos',
     periodRole: 'Frontend - 09/2020 - 04/2021',
     description:
       'Desarrollo de aplicaciones para entidades financieras, creación de PWA, estilos con Angular Material, técnicas de optimización, buenas prácticas y estructura de proyectos',
+    link: 'https://tecreemos.com/',
   },
   {
     title: 'PROTECO',
-    periodRole: 'Profesor 2018-2021',
+    periodRole: 'Profesor - 2018-2021',
     description:
       'Impartí cursos de JavaScript, Angular y desarrollo web en general, asesoría y workshops gratuitos a la comunidad, guíar y asesorar a las nuevas generaciones del programa',
+    link: 'http://protecounam.mx/',
   },
 ];
 

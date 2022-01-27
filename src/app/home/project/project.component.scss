@@ -35,6 +35,9 @@
     display: flex;
     gap: 7rem;
     padding-block: 5rem;
+    &.is-even {
+      flex-direction: row-reverse;
+    }
     &-description {
       margin: auto;
     }
