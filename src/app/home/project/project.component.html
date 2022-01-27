@@ -1,4 +1,8 @@
-<section *ngIf="project" class="project section">
+<section
+  *ngIf="project"
+  [ngClass]="{ 'is-even': isEven }"
+  class="project section"
+>
   <div class="project-image">
     <img
       width="312"

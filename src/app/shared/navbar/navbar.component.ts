@@ -10,7 +10,11 @@ export class NavbarComponent {
   navbarItems = NAVIGATION;
 
   navigateToSection(section: string) {
-    window.location.hash = '';
-    window.location.hash = section;
+    if (section.startsWith('#')) {
+      window.location.hash = '';
+      window.location.hash = section;
+      return;
+    }
+    window.location.href = section;
   }
 }

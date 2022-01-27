@@ -22,6 +22,7 @@ export const NAVIGATION: INavigation[] = [
   { name: 'Proyectos', path: '#projects' },
   { name: 'Experiencia', path: '#experience' },
   { name: 'Contacto', path: '#contact' },
+  { name: 'Blog', path: 'https://armandorivera-blog.netlify.app/' },
 ];
 
 export const PROJECT_LIST: Partial<IProject>[] = [
@@ -29,6 +30,8 @@ export const PROJECT_LIST: Partial<IProject>[] = [
     title: 'Portafolio',
     description:
       'Publica tus projectos, tu experiencia y tu contacto, muéstrale al mundo las tecnlogofías con las que has trabajado. Esta aplicación fue construida con Angular, Sass, HTML y CSS, se buscó tener una arquitectura basada en componentes reutilizables',
+    linkProject: 'https://www.armandorivera.tech',
+    linkCode: 'https://github.com/Armando101/Portfolio',
   },
   {
     title: 'Spotifu',
@@ -49,7 +52,7 @@ export const PROJECT_LIST: Partial<IProject>[] = [
     description:
       'En este sitio web puedes publicar tus propios artículos, fue creado con gatsby y para el deploy se ocupó Netlify y cloudflare',
     linkCode: 'https://github.com/Armando101/blog',
-    linkProject: 'https://www.armandorivera.tech/',
+    linkProject: 'https://armandorivera-blog.netlify.app/',
   },
 ];
 
@@ -77,7 +80,7 @@ export const EXPERIENCE_LIST: IExperience[] = [
   },
   {
     title: 'PROTECO',
-    periodRole: 'Profesor 2018-2021',
+    periodRole: 'Profesor - 2018-2021',
     description:
       'Impartí cursos de JavaScript, Angular y desarrollo web en general, asesoría y workshops gratuitos a la comunidad, guíar y asesorar a las nuevas generaciones del programa',
   },
