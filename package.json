@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
-    "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch master"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -34,7 +33,6 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/eslint-plugin-tslint": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
-    "angular-cli-ghpages": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "codelyzer": "^6.0.0",
     "eslint": "^8.7.0",
