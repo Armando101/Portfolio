@@ -75,6 +75,12 @@ export const EXPERIENCE_LIST: IExperience[] = [
     description:
       'Desarrollo de aplicaciones para entidades financieras, creación de PWA, estilos con Angular Material, técnicas de optimización, buenas prácticas y estructura de proyectos',
   },
+  {
+    title: 'PROTECO',
+    periodRole: 'Profesor 2018-2021',
+    description:
+      'Impartí cursos de JavaScript, Angular y desarrollo web en general, asesoría y workshops gratuitos a la comunidad, guíar y asesorar a las nuevas generaciones del programa',
+  },
 ];
 
 export const CONTACT = {
