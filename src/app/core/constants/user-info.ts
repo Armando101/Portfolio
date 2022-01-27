@@ -22,7 +22,11 @@ export const NAVIGATION: INavigation[] = [
   { name: 'Proyectos', path: '#projects' },
   { name: 'Experiencia', path: '#experience' },
   { name: 'Contacto', path: '#contact' },
-  { name: 'Blog', path: 'https://armandorivera-blog.netlify.app/' },
+  {
+    name: 'Blog',
+    path: 'https://armandorivera-blog.netlify.app/',
+    isExternal: true,
+  },
 ];
 
 export const PROJECT_LIST: Partial<IProject>[] = [

@@ -11,6 +11,7 @@ export interface IUser {
 export interface INavigation {
   name: string;
   path: string;
+  isExternal?: boolean;
 }
 
 export interface IProject {
