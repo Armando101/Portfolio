@@ -8,4 +8,9 @@ import { NAVIGATION } from 'src/app/core/constants/user-info';
 })
 export class NavbarComponent {
   navbarItems = NAVIGATION;
+
+  navigateToSection(section: string) {
+    window.location.hash = '';
+    window.location.hash = section;
+  }
 }

@@ -19,40 +19,61 @@ export const USER: Partial<IUser> = {
 USER.fullName = `${USER.name} ${USER.lastname}`;
 
 export const NAVIGATION: INavigation[] = [
-  { name: 'Proyectos', path: '#' },
-  { name: 'Testimonios', path: '#' },
-  { name: 'Contacto', path: '#' },
-  { name: 'Prensa', path: '#' },
+  { name: 'Proyectos', path: '#projects' },
+  { name: 'Experiencia', path: '#experience' },
+  { name: 'Contacto', path: '#contact' },
 ];
 
 export const PROJECT_LIST: Partial<IProject>[] = [
   {
-    title: 'Netnet',
+    title: 'Portafolio',
     description:
-      'Netnet es una de las plataformas de entretenimiento con más ranking a nivel mundial y detrás de las películas y series que nos ofrece, hay un diseño con el que está estructurada...',
+      'Publica tus projectos, tu experiencia y tu contacto, muéstrale al mundo las tecnlogofías con las que has trabajado. Esta aplicación fue construida con Angular, Sass, HTML y CSS, se buscó tener una arquitectura basada en componentes reutilizables',
   },
   {
-    title: 'Instantanea',
+    title: 'Spotifu',
     description:
-      'Aplicación y red social propiedad de Facebook, cuya función principal es poder compartir fotografías y vídeos con otros usuarios.Aplicación y red social propiedad de Facebook, cuya función principal es poder compartir fotografías y vídeos con otros usuarios.',
+      'Spotifu es un clon de Spotify, se construyó unicamente con HTML y CSS, se usó flexbox para el posicionamiento de los elementos, es un clone de la aplicación Spotify para desktop',
+    linkProject: 'https://armando101.github.io/spotifu/',
+    linkCode: 'https://github.com/Armando101/spotifu',
+  },
+  {
+    title: 'Nemium',
+    description:
+      'Sitio web clone de Medium, para publicar tu propio blog, versión desktop y móvil, dispone de 4 variantes del mismo proyecto variando en la paleta de colores, se creó únicamente con HTML y CSS',
+    linkProject: 'https://armando101.github.io/nemium/',
+    linkCode: 'https://github.com/Armando101/nemium',
+  },
+  {
+    title: 'Blog personal',
+    description:
+      'En este sitio web puedes publicar tus propios artículos, fue creado con gatsby y para el deploy se ocupó Netlify y cloudflare',
+    linkCode: 'https://github.com/Armando101/blog',
+    linkProject: 'https://www.armandorivera.tech/',
   },
 ];
 
 export const EXPERIENCE_DESCRIPTION =
-  'Tengo más de 2 años de experiencia en Frontend.';
+  'Tengo más de 2 años de experiencia en Frontend especializando con aplicaciones hechas con Angular.';
 
 export const EXPERIENCE_LIST: IExperience[] = [
   {
-    title: 'Marvolo',
-    periodRole: 'Frontend - 2018',
+    title: 'Kavak',
+    periodRole: 'Web Desinger - 10/2021 - Actualidad ',
     description:
-      '¡Marvol.com es el sitio oficial de Marvol Entertainment! Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvel.',
+      'Desarrollo de aplicaciones con Angular, Maquetado pixel perfect basado en diseños de figma, Integración con GraphQL, proponer y bajar requerimentos a código',
   },
   {
-    title: 'Niko',
-    periodRole: 'Frontend - 2019',
+    title: 'Palo-IT',
+    periodRole: 'Frontend - 04/2021 - 08/2021',
     description:
-      'Encuentra lo mejor de Niko, con productos nuevos cada semana y disfruta del envío gratis. ¡Únete a nosotros! y accede como miembro a productos y beneficios exclusivos. ',
+      'Maquetado con Bootstrap, Integración de API REST, pruebas unitarias con Jasmine y Karma, escribir documentación de proyectos, interacción con clientes',
+  },
+  {
+    title: 'Te creemos',
+    periodRole: 'Frontend - 09/2020 - 04/2021',
+    description:
+      'Desarrollo de aplicaciones para entidades financieras, creación de PWA, estilos con Angular Material, técnicas de optimización, buenas prácticas y estructura de proyectos',
   },
 ];
 
@@ -71,6 +92,10 @@ export const CONTACT = {
     {
       name: 'GitHub',
       path: 'https://github.com/Armando101',
+    },
+    {
+      name: 'LinkedIn',
+      path: 'https://www.linkedin.com/in/armando101/',
     },
   ],
 };

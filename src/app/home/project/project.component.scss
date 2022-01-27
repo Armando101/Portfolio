@@ -3,6 +3,7 @@
     text-align: center;
     & img {
       inline-size: 100%;
+      object-fit: contain;
     }
   }
   & h3 {
@@ -24,9 +25,7 @@
 @media screen and (min-width: 375px) {
   .project {
     &-image {
-      & img {
-        inline-size: inherit;
-      }
+      inline-size: 100%;
     }
   }
 }

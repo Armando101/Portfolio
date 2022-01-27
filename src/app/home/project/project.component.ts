@@ -12,7 +12,13 @@ export class ProjectComponent implements OnInit {
   placeholder: string;
 
   ngOnInit() {
-    this.pathImage = `assets/images/projects/${this.project.title.toLocaleLowerCase()}.png`;
+    this.pathImage = `assets/images/projects/${this.image}.png`;
     this.placeholder = `Projecto ${this.project.title}`;
+  }
+
+  get image() {
+    const kebakCase = this.project.title.replace(' ', '-');
+    const imageName = kebakCase.toLocaleLowerCase();
+    return imageName;
   }
 }

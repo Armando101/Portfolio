@@ -18,6 +18,8 @@ export interface IProject {
   pathImage: string;
   description: string;
   placeholder: string;
+  linkProject: string;
+  linkCode: string;
 }
 
 export interface IExperience {
