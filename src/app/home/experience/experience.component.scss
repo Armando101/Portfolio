@@ -10,4 +10,9 @@
   &-period {
     font: var(--body1bold);
   }
+  & a {
+    font: var(--headline3);
+    color: var(--white);
+    text-decoration: none;
+  }
 }

@@ -26,4 +26,5 @@ export interface IExperience {
   title: string;
   periodRole: string;
   description: string;
+  link: string;
 }
