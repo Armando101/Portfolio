@@ -10,14 +10,15 @@
         [title]="placeholder"
       />
     </div>
-    <h1>{{ name }}</h1>
-    <h5>{{ resume }}</h5>
-    <p>{{ description }}</p>
+    <h1>{{ user.fullName }}</h1>
+    <h5>{{ user.resume }}</h5>
+    <p>{{ user.description }}</p>
     <app-button
       type="primary"
       title="Descargar Currículum"
       [size]="'50'"
       [breakPoint]="'lg'"
+      [link]="user.cvLink"
     ></app-button>
   </section>
 </div>

@@ -8,6 +8,7 @@ const DEFAULT_BUTTON_SIZE = 100;
 export class ButtonComponent {
   @Input() title: string;
   @Input() type: string;
+  @Input() link: string;
   @Input() private readonly size: number;
   @Input() private readonly breakPoint: string;
 
@@ -18,5 +19,9 @@ export class ButtonComponent {
     }
 
     return `w-${buttonSize}`;
+  }
+
+  public get linkButton() {
+    return this.link || '#';
   }
 }

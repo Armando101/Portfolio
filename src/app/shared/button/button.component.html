@@ -1,1 +1,3 @@
-<button [class]="type" [ngClass]="inlineSize">{{ title }}</button>
+<button tabindex="-1" [class]="type" [ngClass]="inlineSize">
+  <a target="_blank" [href]="link">{{ title }}</a>
+</button>

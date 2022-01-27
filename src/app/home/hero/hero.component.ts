@@ -7,9 +7,13 @@ import { USER } from 'src/app/core/constants/user-info';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent {
-  name = USER.fullName;
-  imagePath = `/assets/images/${USER.image}.png`;
-  placeholder = `Foto de ${this.name}`;
-  resume = USER.resume;
-  description = USER.description;
+  user = USER;
+
+  get imagePath() {
+    return `/assets/images/${this.user.image}.png`;
+  }
+
+  get placeholder() {
+    return `Foto de ${this.user.fullName}`;
+  }
 }

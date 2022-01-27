@@ -5,6 +5,7 @@ export interface IUser {
   image: string;
   resume: string;
   description: string;
+  cvLink: string;
 }
 
 export interface INavigation {
