@@ -38,11 +38,11 @@ export const PROJECT_LIST: Partial<IProject>[] = [
     linkCode: 'https://github.com/Armando101/Portfolio',
   },
   {
-    title: 'Spotifu',
+    title: 'Movies world',
     description:
-      'Spotifu es un clon de la aplicación desktop Spotify, se construyó unicamente con HTML y CSS, se usó flexbox para el posicionamiento de los elementos',
-    linkProject: 'https://armando101.github.io/spotifu/',
-    linkCode: 'https://github.com/Armando101/spotifu',
+      'Obtén información de las películas del momento, puedes buscar cualquier película, ver información sobre ella como el cast o crew y su puntuación, esta aplicación fue construida con Angular usando nx como entorno de trabajo para aprovechar la arquitectura de monorepo',
+    linkCode: 'https://github.com/Armando101/movies-world',
+    linkProject: 'https://wonderful-curie-059a30.netlify.app/',
   },
   {
     title: 'Nemium',
@@ -57,6 +57,13 @@ export const PROJECT_LIST: Partial<IProject>[] = [
       'En este sitio web puedes publicar tus propios artículos, fue creado con gatsby y para el deploy se ocupó Netlify y cloudflare',
     linkCode: 'https://github.com/Armando101/blog',
     linkProject: 'https://armandorivera-blog.netlify.app/',
+  },
+  {
+    title: 'Spotifu',
+    description:
+      'Spotifu es un clon de la aplicación desktop Spotify, se construyó unicamente con HTML y CSS, se usó flexbox para el posicionamiento de los elementos',
+    linkProject: 'https://armando101.github.io/spotifu/',
+    linkCode: 'https://github.com/Armando101/spotifu',
   },
 ];
 
