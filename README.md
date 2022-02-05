@@ -1,8 +1,12 @@
 # Portfolio
+Publica tus projectos, tu experiencia y contacto, muéstrale al mundo las tecnologdías con las que has trabajado.
 
 ### Mobile view
 ![image](https://user-images.githubusercontent.com/35951139/150903470-6e75e08d-5009-41c1-9518-e74c573d9e13.png)
 
+
+### Desktop view
+![desk](https://user-images.githubusercontent.com/35951139/152648037-cab73e86-259a-49a7-a9a4-ed9dcd5bcdb9.png)
 
 
 ## Development server
