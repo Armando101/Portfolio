@@ -34,7 +34,7 @@
   .project {
     display: flex;
     gap: 7rem;
-    padding-block: 5rem;
+    padding-block: 0;
     &.is-even {
       flex-direction: row-reverse;
     }
