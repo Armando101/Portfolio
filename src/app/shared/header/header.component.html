@@ -1,5 +1,5 @@
 <header class="header">
-  <h4 class="header-name">{{ name }}</h4>
+  <h4 class="header-name">{{ name | async }}</h4>
   <i class="icon-visible" (click)="showNavbar()" [class]="currentIconClass"></i>
   <app-navbar class="is-not-visible" [class]="classMenu"></app-navbar>
 </header>

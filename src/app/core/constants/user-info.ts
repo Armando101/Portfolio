@@ -1,4 +1,5 @@
 import {
+  IContact,
   IExperience,
   INavigation,
   IProject,
@@ -101,7 +102,7 @@ export const EXPERIENCE_LIST: IExperience[] = [
   },
 ];
 
-export const CONTACT = {
+export const CONTACT: IContact = {
   message: '¿Quieres trabajar conmigo? ¡Hazme ping!',
   email: 'rivera.armando0829@gmail.com',
   socialNetworks: [
