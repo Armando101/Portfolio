@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
-import { PROJECT_LIST } from 'src/app/core/constants/user-info';
+import { Component, OnInit } from '@angular/core';
+import { UserDataService } from '../../core/services/user-data.service';
+import { IProject } from '../../core/interfaces/user-info.interface';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.scss'],
 })
-export class ProjectListComponent {
-  projectList = PROJECT_LIST;
+export class ProjectListComponent implements OnInit {
+  projectList: Observable<IProject[]>;
+
+  constructor(private readonly userData: UserDataService) {}
+
+  ngOnInit(): void {
+    this.projectList = this.userData.getProjectList();
+  }
 }

@@ -1,8 +1,8 @@
 <div class="wrapper footer">
   <footer class="footer">
-    <h5>{{ user.fullName }}</h5>
+    <h5>{{ (user | async).fullName }}</h5>
     <ul>
-      <li *ngFor="let social of socialNetworks">
+      <li *ngFor="let social of socialNetworks | async">
         <a [href]="social.path" target="_blank">{{ social.name }}</a>
       </li>
     </ul>

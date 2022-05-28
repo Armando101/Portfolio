@@ -1,10 +1,10 @@
 <div id="experience" class="wrapper experienceList">
   <section class="section experienceList">
     <h3>Experiencia</h3>
-    <h5>{{ description }}</h5>
+    <h5>{{ description | async }}</h5>
     <hr />
     <app-experience
-      *ngFor="let experience of experienceList"
+      *ngFor="let experience of experienceList | async"
       [experience]="experience"
     ></app-experience>
   </section>

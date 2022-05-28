@@ -29,3 +29,14 @@ export interface IExperience {
   description: string;
   link: string;
 }
+
+export interface ISocialNetworks {
+  name: string;
+  path: string;
+}
+
+export interface IContact {
+  message: string;
+  email: string;
+  socialNetworks: ISocialNetworks[];
+}

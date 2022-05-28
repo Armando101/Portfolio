@@ -1,6 +1,6 @@
 <div id="projects" class="wrapper projectList">
   <app-project
-    *ngFor="let project of projectList; index as i"
+    *ngFor="let project of projectList | async; index as i"
     [project]="project"
     [id]="i"
   ></app-project>

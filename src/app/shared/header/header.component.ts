@@ -1,13 +1,14 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
-import { USER } from 'src/app/core/constants/user-info';
-
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators';
+import { UserDataService } from '../../core/services/user-data.service';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-  name = USER.fullName;
+export class HeaderComponent implements OnInit {
+  name: Observable<string>;
   showNav = false;
   @HostListener('document:click', ['$event'])
   clickout(event) {
@@ -17,7 +18,14 @@ export class HeaderComponent {
     this.showNav = false;
   }
 
-  constructor(private eRef: ElementRef) {}
+  constructor(
+    private eRef: ElementRef,
+    private readonly userData: UserDataService
+  ) {}
+
+  ngOnInit() {
+    this.name = this.userData.getUserInfo().pipe(map((item) => item.fullName));
+  }
 
   showNavbar() {
     this.showNav = !this.showNav;
