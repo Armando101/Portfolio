@@ -14,7 +14,7 @@ export const USER: Partial<IUser> = {
   description:
     'Me encanta centrarme en los detalles de las experiencias de nuevos productos con una  implementación en código perfecta. Pero los grandes productos no comienzan ahí, comienzan con una sólida colaboración con los compañeros de equipo de investigación, ingeniería y productos para comprender los problemas y las circunstancias de los clientes.',
   cvLink:
-    'https://drive.google.com/file/d/1URmH2yep9rPqrnrP42foxUF6nWhIeL0s/view?usp=sharing',
+    'https://drive.google.com/file/d/19HMNl4iupaJ0wM_wQ20gIeVyMrymvFOT/view?usp=sharing',
 };
 
 USER.fullName = `${USER.name} ${USER.lastname}`;
